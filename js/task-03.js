@@ -15,10 +15,15 @@ const images = [
 
 const gallery = document.querySelector("#gallery");
 
-for (let element of images)  
+images.map(element => {
   gallery.insertAdjacentHTML('beforeEnd', `<li><img src="${element.url}" alt="${element.alt}" width="320"></li>`);
+});
 
 
+
+
+// for (let element of images)  
+//   gallery.insertAdjacentHTML('beforeEnd', `<li><img src="${element.url}" alt="${element.alt}" width="320"></li>`);
 
 
 // const elements = images.map(element => {
